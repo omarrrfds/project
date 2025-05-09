@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adham - Video Editor Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="" />
+    <link rel="stylesheet" href="loma.css" />
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">A</span>
+                <span class="nav__logo-name">Adham.</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Hey, I'm <span class="text-[#00A3E0]">Adham</span>
+                    </h1>
+                    <h2 class="home__subtitle">Video Editor & Motion Designer</h2>
+                    <p class="home__description">
+                        Crafting sleek, modern, and captivating video experiences.
+                    </p>
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+                <div class="home__img">
+                    <img src="lomaaaa.jpg" alt="Profile Image" />
+                    <div class="home__shadow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <img src="lomaaaa.jpg" alt="About Image" />
+                    <div class="about__shadow"></div>
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="about__description">
+                        Hi, it's Adham, a senior video editor for short and long content, and motion designer. I elevate your videos with top-tier editing skills, including storytelling and viewer engagement, using Adobe After Effects and Premiere Pro. Just DM me!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <video src="video1.mp4" autoplay muted loop playsinline class="projects__img"></video>
+                        <div class="projects__overlay">
+                            <h3 class="projects__title">Video Project One</h3>
+                        </div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Video Project One</h3>
+                        <p class="projects__description">
+                            A showcase of my first video editing project with dynamic effects.
+                        </p>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <video src="vidoe2.mp4" autoplay muted loop playsinline class="projects__img"></video>
+                        <div class="projects__overlay">
+                            <h3 class="projects__title">Video Project Two</h3>
+                        </div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Video Project Two</h3>
+                        <p class="projects__description">
+                            Highlighting my second project with advanced motion design.
+                        </p>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <video src="video3.mp4" autoplay muted loop playsinline class="projects__img"></video>
+                        <div class="projects__overlay">
+                            <h3 class="projects__title">Video Project Three</h3>
+                        </div>
+                    </div>
+                    <div class="projects__content">
+                        <h3 class="projects__title">Video Project Three</h3>
+                        <p class="projects__description">
+                            Featuring my third project with creative storytelling.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h2 class="contact__title">Send Me A Message</h2>
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <input type="text" name="user_name" required placeholder="First Name" class="contact__input" />
+                        </div>
+                        <div class="contact__group">
+                            <input type="email" name="user_email" required placeholder="Email Address" class="contact__input" />
+                        </div>
+                        <div class="contact__group">
+                            <input type="text" name="user_subject" required placeholder="Subject" class="contact__input" />
+                        </div>
+                        <div class="contact__group">
+                            <textarea name="user_message" required placeholder="Message" class="contact__input"></textarea>
+                        </div>
+                        <p class="contact__message" id="contact-message"></p>
+                        <button type="submit" class="button contact__button">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact__content">
+                  <h2 class="contact__title">My Socials</h2>
+                  <p class="contact__description">Reach out to me on my social networks:</p>
+                  <div class="contact__social">
+                      <a href="https://www.instagram.com/maskd_edits99?igsh=N2N1YTUzaGx6cnVq" target="_blank" class="contact__social-link">
+                          <i class="ri-instagram-line"></i>
+                          <span>Instagram</span>
+                      </a>
+                      <a href="https://www.youtube.com/@Adham_hassan-z1f" target="_blank" class="contact__social-link">
+                          <i class="ri-youtube-line"></i>
+                          <span>YouTube</span>
+                      </a>
+                      <a href="https://www.behance.net/adhamhassan19a" target="_blank" class="contact__social-link">
+                          <i class="ri-behance-line"></i>
+                          <span>Behance</span>
+                      </a>
+                      <a href="https://x.com/Adham_Hassan99" target="_blank" class="contact__social-link">
+                          <i class="ri-twitter-x-line"></i>
+                          <span>X</span>
+                      </a>
+                      <a href="mailto:lomaa2077@gmail.com" target="_blank" class="contact__social-link">
+                          <i class="ri-gmail-line"></i>
+                          <span>Gmail</span>
+                      </a>
+                  </div>
+              </div>
+              
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__container container grid">
+        <ul class="footer__links">
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#projects" class="footer__link">Projects</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+        </ul>
+        <span class="footer__copy">
+            &#169; Web developed by Omar Nabil.
+            <a href="https://www.instagram.com/omar_nabil.8?igsh=b29lZHNvZW85bjAy" target="_blank" class="contact__social-link">
+                <i class="ri-instagram-line"></i>
+                <span>omar_nabil</span>
+            </a>
+        </span>
+    </div>
+</footer>
+
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src=""></script>
+    <script src="loma.js"></script>
+</body>
+</html>
